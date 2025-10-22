@@ -5,34 +5,115 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <!-- LOGO AND NAVBAR -->
     <header>
         <nav class="navbar">
             <a href="#" class="logo">Coffee<span>.</span></a>
             <ul class="menu-link">
                 <span id="close-menu-btn"class="material-symbols-outlined">&times;</span>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Testimonials</a></li>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Contact us</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#about">About us</a></li>
+                <li><a href="#contact">Contact us</a></li>
             </ul>
             <span id="menu-btn" class="material-symbols-outlined">☰</span>
         </nav>
     </header>
 
-    <section class="hero-section">
+    <!-- HOMEPAGE -->
+    <section class="hero-section" id="home">
         <div class="content">
             <h1>Start Your Day With A Fresh Coffee</h1>
             <p>
                 Coffee is a popular and beverage enjoyed by 
                 people around the world.
             </p>
-            <button>Order Now</button>
+            <a href="#products"><button>Order Now</button></a>
         </div>
     </section>
 
+    <!-- PRODUCTS SECTION -->
+    <section id="products" class="section" id="products">
+        <h2>Our Products</h2>
+    <div class="products-container">
+
+        <div class="product-card">
+            <img src="coffee-espresso.jpeg" alt="Espresso">
+            <h3>Espresso</h3>
+            <p>Strong and bold classic shot of coffee.</p>
+            <button>Order Now</button>
+        </div>
+
+        <div class="product-card">
+            <img src="coffee-cappuccino.jpeg" alt="Cappuccino">
+            <h3>Cappuccino</h3>
+            <p>Perfect blend of milk and espresso with foam.</p>
+            <button>Order Now</button>
+        </div>
+
+        <div class="product-card">
+            <img src="coffee-coldBrew.jpeg" alt="Cold Brew">
+            <h3>Cold Brew</h3>
+            <p>Refreshing slow-brewed coffee served chilled.</p>
+            <button>Order Now</button>
+        </div>
+    </div>
+    </section>
+
+<!-- ABOUT US -->
+    <section id="about" class="section light" id="about">
+        <h2>About Us</h2>
+    <p>
+        We're passionate coffee lovers dedicated to serving the freshest brews.
+        Every cup is made from hand-selected beans sourced from trusted farms.
+        Our mission is simple — to make your day better, one sip at a time.
+    </p>
+    </section>
+
+<!-- TESTIMONIALS -->
+    <section id="testimonials" class="section" id="testimonials">
+        <h2>What Our Customers Say</h2>
+    <div class="testimonials-container">
+
+        <div class="testimonial">
+            <p>“Best coffee in town! Fresh taste and amazing aroma.”</p>
+            <h4>– Arif.</h4>
+        </div>
+
+        <div class="testimonial">
+            <p>“Loved the cold brew. Smooth and perfectly balanced.”</p>
+            <h4>– Ansaf.</h4>
+        </div>
+
+        <div class="testimonial">
+            <p>“Beautiful ambience and quick service. Highly recommend!”</p>
+            <h4>– Shammas.</h4>
+        </div>
+    </div>
+    </section>
+
+<!-- CONTACT -->
+    <section id="contact" class="section light" id="contact">
+        <h2>Contact Us</h2>
+        <form class="contact-form">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="4" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+<!-- FOOTER SECTION -->
+    <footer>
+        <p>© 2025 Fresh Coffee. All rights reserved.</p>
+    </footer>
+
+
     <script src="script.js"></script>
+
 </body>
 </html>
