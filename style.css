@@ -267,7 +267,7 @@ footer {
 
 /* Responsive Design */
 @media screen and (max-width: 900p) {
-x
+
     header {
         padding: 10px 20px;
 
@@ -306,7 +306,7 @@ x
 
     .navbar a:hover {
     color: #C06B3E;
-}
+    }
 
     header.show-mobile-menu .navbar .menu-link {
         left: 0;
